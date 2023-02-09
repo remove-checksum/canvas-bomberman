@@ -11,7 +11,11 @@
     "stylelint:fix": "stylelint \"**/*.{css,scss}\" --fix",
     "check-types": "tsc --project ./tsconfig.json --noEmit",
     "format": "prettier --write .",
-    "test": "jest ./"
+    "test": "jest ./",
+    "dev:ssr": "npx ts-node ./server.ts",
+    "dev:server": "ts-node ./server.ts",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "vite build --outDir dist/server --ssr src/main.server.tsx"
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.9.1",

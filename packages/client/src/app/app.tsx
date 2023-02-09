@@ -6,11 +6,11 @@ import './app.module.css'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <StoreProvider store={store}>
-        <AppRouting />
-      </StoreProvider>
-    </BrowserRouter>
+    // <BrowserRouter>
+    <StoreProvider store={store}>
+      <AppRouting />
+    </StoreProvider>
+    // </BrowserRouter>
   )
 }
 
